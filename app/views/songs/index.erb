@@ -2,5 +2,5 @@
 <% binding.pry %>
 <!-- lists songs in 'Artist Name - Song Title' format -->
 <% @songs.each do |song| %>
-  <%= %> -- <%= %>
+  <%= song.artist %> -- <%= song.title%>
 <% end %>
