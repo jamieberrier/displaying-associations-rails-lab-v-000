@@ -1,6 +1,6 @@
 <h1>All Artists</h1>
 
-  <% binding.pry %>
-  <% @artists.each.do |artist| %>
-    <li><%= link_to artist.name, artist_path(artist) %></li>
-  <% end %>
+<% binding.pry %>
+<% @artists.each.do |artist| %>
+  <%= link_to artist.name, artist_path(artist) %>
+<% end %>
