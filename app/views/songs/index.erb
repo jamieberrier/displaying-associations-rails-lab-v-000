@@ -1,6 +1,8 @@
 <h1>All Songs</h1>
 
 <!-- lists songs in 'Artist Name - Song Title' format -->
-<% @songs.each do |song| %>
-  <%= song.artist %> -- <%= song.title%>
-<% end %>
+<ul>
+  <% @songs.each do |song| %>
+    <li><%= song.artist %> -- <%= song.title%></li>
+  <% end %>
+</ul>
